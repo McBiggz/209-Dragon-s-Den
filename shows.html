@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="209 Slam Sesh is live professional wrestling presented by BMF Entertainment at the BMF Ranch in Lodi, California."
+    >
+
+    <title>
+        209 Slam Sesh | BMF Entertainment
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="shows-page">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header shows-header">
+
+        <div class="header-inner">
+
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <span class="brand-main">
+                    209 DRAGON'S DEN
+                </span>
+
+                <span class="brand-small">
+                    PRO WRESTLING ACADEMY
+                </span>
+
+            </a>
+
+
+
+            <nav
+                class="desktop-nav"
+                aria-label="Main Navigation"
+            >
+
+                <a href="index.html">
+                    The School
+                </a>
+
+                <a href="#upcoming">
+                    Next Show
+                </a>
+
+                <a href="#sesh">
+                    Slam Sesh
+                </a>
+
+                <a href="#bmf">
+                    BMF Entertainment
+                </a>
+
+            </nav>
+
+
+
+            <a
+                href="https://www.eventbrite.com/o/34408735843"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="header-cta ticket-header-cta"
+            >
+
+                GET TICKETS ↗
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             SHOW HERO
+        ================================================== -->
+
+        <section class="slam-hero">
+
+            <div class="slam-hero-image"></div>
+
+            <div class="slam-hero-overlay"></div>
+
+            <div class="slam-red-wash"></div>
+
+
+            <div class="container slam-hero-inner">
+
+                <div class="slam-hero-copy">
+
+
+                    <p class="show-kicker">
+                        BMF ENTERTAINMENT PRESENTS
+                    </p>
+
+
+                    <h1>
+
+                        209
+                        <span>
+                            SLAM SESH
+                        </span>
+
+                    </h1>
+
+
+                    <p class="slam-subtitle">
+
+                        LIVE PROFESSIONAL WRESTLING
+                        AT THE BMF RANCH
+
+                    </p>
+
+
+                    <p class="slam-intro">
+
+                        Independent wrestling up close,
+                        loud and live in Lodi, California.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="https://www.eventbrite.com/o/34408735843"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-red"
+                        >
+
+                            <span>
+                                GET TICKETS
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="#upcoming"
+                            class="btn btn-ghost"
+                        >
+
+                            NEXT SHOW ↓
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="slam-hero-bmf">
+
+                    <span>
+                        PRESENTED BY
+                    </span>
+
+                    <img
+                        src="assets/BIGMFENT.png"
+                        alt="BMF Entertainment"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RANCH STATEMENT
+        ================================================== -->
+
+        <section class="slam-statement">
+
+            <div class="container">
+
+                <span>
+                    LIVE WRESTLING
+                </span>
+
+                <b>
+                    ·
+                </b>
+
+                <span>
+                    BMF RANCH
+                </span>
+
+                <b>
+                    ·
+                </b>
+
+                <span>
+                    LODI, CALIFORNIA
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             UPCOMING EVENT
+        ================================================== -->
+
+        <section
+            class="section upcoming-section"
+            id="upcoming"
+        >
+
+            <div class="container">
+
+
+                <p class="show-kicker">
+                    UPCOMING
+                </p>
+
+
+                <h2 class="section-title">
+
+                    NEXT UP AT
+                    <span class="red-text">
+                        THE RANCH.
+                    </span>
+
+                </h2>
+
+
+
+                <!--
+                    shows.js automatically fills this area.
+
+                    If an upcoming event exists:
+                    It renders the poster, title, date,
+                    location and ticket buttons.
+
+                    If no upcoming event exists:
+                    It renders "NOTHING ON THE CARD... YET."
+                -->
+
+                <div
+                    id="upcomingEvent"
+                    class="upcoming-event"
+                >
+
+                    <div class="event-loading">
+
+                        CHECKING THE CARD...
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WHAT IS SLAM SESH
+        ================================================== -->
+
+        <section
+            class="section slam-about-section"
+            id="sesh"
+        >
+
+            <div class="container slam-about-grid">
+
+
+                <div>
+
+                    <p class="show-kicker">
+                        WELCOME TO THE RANCH
+                    </p>
+
+                    <h2 class="section-title">
+
+                        THIS IS
+                        <span class="red-text">
+                            209 SLAM SESH.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+
+                <div class="slam-about-copy">
+
+                    <p>
+
+                        209 Slam Sesh is BMF Entertainment's
+                        live professional wrestling series at
+                        the BMF Ranch in Lodi.
+
+                    </p>
+
+
+                    <p>
+
+                        The ring is close. The crowd is loud.
+                        Wrestlers from the Dragon's Den and
+                        beyond step through the ropes for a
+                        night built around independent
+                        professional wrestling.
+
+                    </p>
+
+
+                    <p>
+
+                        This isn't wrestling from three sections
+                        away.
+
+                        You're at the Ranch.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXPERIENCE
+        ================================================== -->
+
+        <section class="section slam-experience">
+
+            <div class="container">
+
+
+                <p class="show-kicker">
+                    THE SLAM SESH EXPERIENCE
+                </p>
+
+
+                <div class="experience-grid">
+
+
+                    <article>
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            UP CLOSE
+                        </h3>
+
+                        <p>
+
+                            Independent wrestling without
+                            a stadium-sized gap between the
+                            crowd and the ring.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article>
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            LIVE & LOCAL
+                        </h3>
+
+                        <p>
+
+                            Professional wrestling produced
+                            right here in California's
+                            Central Valley.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article>
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            NEW MATCHUPS
+                        </h3>
+
+                        <p>
+
+                            Dragon's Den talent shares the card
+                            with wrestlers from throughout
+                            the independent scene.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BMF
+        ================================================== -->
+
+        <section
+            class="section bmf-feature"
+            id="bmf"
+        >
+
+            <div class="container bmf-feature-grid">
+
+
+                <div class="bmf-feature-logo">
+
+                    <img
+                        src="assets/BIGMFENT.png"
+                        alt="BMF Entertainment"
+                    >
+
+                </div>
+
+
+
+                <div class="bmf-feature-copy">
+
+                    <p class="show-kicker">
+                        BEHIND THE SHOW
+                    </p>
+
+
+                    <h2 class="section-title">
+
+                        BMF
+                        <span class="red-text">
+                            ENTERTAINMENT.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        BMF Entertainment is the promotion
+                        behind the live wrestling events
+                        connected to the 209 Dragon's Den.
+
+                    </p>
+
+
+                    <p>
+
+                        Through 209 Slam Sesh and special events,
+                        BMF brings professional wrestling to
+                        the BMF Ranch while giving wrestlers
+                        a place to perform in front of a
+                        live audience.
+
+                    </p>
+
+
+                    <div class="bmf-actions">
+
+                        <a
+                            href="https://www.eventbrite.com/o/34408735843"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-red"
+                        >
+
+                            BMF EVENTBRITE ↗
+
+                        </a>
+
+
+                        <a
+                            href="index.html"
+                            class="btn btn-outline"
+                        >
+
+                            VISIT THE DRAGON'S DEN →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TICKETS
+        ================================================== -->
+
+        <section class="slam-ticket-cta">
+
+            <div class="slam-ticket-lines"></div>
+
+
+            <div class="container">
+
+
+                <p>
+                    LIVE PROFESSIONAL WRESTLING
+                </p>
+
+
+                <h2>
+
+                    SEE IT
+                    <span>
+                        LIVE.
+                    </span>
+
+                </h2>
+
+
+                <p class="ticket-copy">
+
+                    View upcoming BMF Entertainment events
+                    and get your tickets through Eventbrite.
+
+                </p>
+
+
+                <a
+                    href="https://www.eventbrite.com/o/34408735843"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-white"
+                >
+
+                    <span>
+                        VIEW EVENTS & TICKETS
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer slam-footer">
+
+        <div class="container footer-inner">
+
+
+            <div>
+
+                <strong>
+                    BMF ENTERTAINMENT
+                </strong>
+
+                <span>
+                    209 SLAM SESH
+                </span>
+
+            </div>
+
+
+            <nav>
+
+                <a href="index.html">
+                    DRAGON'S DEN
+                </a>
+
+                <a href="#upcoming">
+                    NEXT SHOW
+                </a>
+
+                <a
+                    href="https://www.eventbrite.com/o/34408735843"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    TICKETS ↗
+                </a>
+
+            </nav>
+
+
+            <span class="footer-location">
+                LODI · CALIFORNIA
+            </span>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="shows.js"></script>
+
+
+</body>
+
+</html>
