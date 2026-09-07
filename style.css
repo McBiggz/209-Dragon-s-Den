@@ -406,20 +406,20 @@ p {
         center;
 
     gap:
-        34px;
+        30px;
 
     font-family:
         "Barlow Condensed",
         sans-serif;
 
     font-size:
-        0.85rem;
+        0.83rem;
 
     font-weight:
         700;
 
     letter-spacing:
-        0.11em;
+        0.09em;
 
     text-transform:
         uppercase;
@@ -482,34 +482,6 @@ p {
 
     background:
         var(--gold);
-
-    color:
-        #000;
-
-}
-
-
-.ticket-header-cta {
-
-    border-color:
-        var(--red);
-
-    color:
-        #fff;
-
-    background:
-        var(--red);
-
-}
-
-
-.ticket-header-cta:hover {
-
-    background:
-        #fff;
-
-    border-color:
-        #fff;
 
     color:
         #000;
@@ -645,39 +617,6 @@ p {
 
     border-color:
         #fff;
-
-    background:
-        #fff;
-
-    color:
-        #000;
-
-}
-
-
-.btn-red {
-
-    background:
-        var(--red);
-
-    color:
-        #fff;
-
-}
-
-
-.btn-red:hover {
-
-    background:
-        #fff;
-
-    color:
-        #000;
-
-}
-
-
-.btn-white {
 
     background:
         #fff;
@@ -1531,7 +1470,7 @@ p {
 
     grid-template-columns:
         repeat(
-            4,
+            5,
             1fr
         );
 
@@ -1545,6 +1484,23 @@ p {
 
     background:
         #111;
+
+}
+
+
+.coach-card-featured {
+
+    position:
+        relative;
+
+    border:
+        1px solid
+        rgba(
+            216,
+            155,
+            43,
+            0.35
+        );
 
 }
 
@@ -1635,7 +1591,50 @@ p {
 }
 
 
+.coach-badge {
+
+    position:
+        absolute;
+
+    z-index:
+        5;
+
+    top:
+        18px;
+
+    left:
+        18px;
+
+    padding:
+        8px
+        12px;
+
+    background:
+        var(--gold);
+
+    color:
+        #080808;
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        0.62rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.14em;
+
+}
+
+
 .coach-info {
+
+    min-height:
+        118px;
 
     padding:
         24px;
@@ -1657,10 +1656,13 @@ p {
         sans-serif;
 
     font-size:
-        1.8rem;
+        1.65rem;
 
     font-weight:
         400;
+
+    line-height:
+        1.05;
 
 }
 
@@ -1682,6 +1684,428 @@ p {
 
     letter-spacing:
         0.15em;
+
+}
+
+
+
+/* =========================================================
+   SEMINARS
+========================================================= */
+
+.seminars-section {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    background:
+        #0c0c0c;
+
+    border-top:
+        1px solid
+        var(--line);
+
+}
+
+
+.seminars-section::before {
+
+    content:
+        "LEARN";
+
+    position:
+        absolute;
+
+    right:
+        -40px;
+
+    top:
+        40px;
+
+    font-family:
+        "Anton",
+        sans-serif;
+
+    font-size:
+        24rem;
+
+    line-height:
+        1;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.018
+        );
+
+    pointer-events:
+        none;
+
+}
+
+
+.seminars-heading {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.1fr
+        0.9fr;
+
+    gap:
+        100px;
+
+    align-items:
+        end;
+
+}
+
+
+.seminars-intro {
+
+    padding-bottom:
+        6px;
+
+}
+
+
+.seminars-intro h3 {
+
+    margin-bottom:
+        20px;
+
+    font-family:
+        "Anton",
+        sans-serif;
+
+    font-size:
+        2rem;
+
+    font-weight:
+        400;
+
+    letter-spacing:
+        0.01em;
+
+}
+
+
+.seminars-intro p {
+
+    color:
+        #aaa;
+
+    line-height:
+        1.8;
+
+}
+
+
+.seminar-names {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    margin-top:
+        75px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    border-top:
+        1px solid
+        var(--line);
+
+    border-left:
+        1px solid
+        var(--line);
+
+}
+
+
+.seminar-name {
+
+    min-height:
+        180px;
+
+    padding:
+        30px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        space-between;
+
+    border-right:
+        1px solid
+        var(--line);
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.015
+        );
+
+    transition:
+        background
+        180ms
+        ease;
+
+}
+
+
+.seminar-name:hover {
+
+    background:
+        rgba(
+            216,
+            155,
+            43,
+            0.05
+        );
+
+}
+
+
+.seminar-name span {
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        0.63rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.16em;
+
+}
+
+
+.seminar-name strong {
+
+    font-family:
+        "Anton",
+        sans-serif;
+
+    font-size:
+        clamp(
+            2rem,
+            3.2vw,
+            3.4rem
+        );
+
+    line-height:
+        0.95;
+
+    font-weight:
+        400;
+
+}
+
+
+.seminar-more {
+
+    background:
+        var(--gold);
+
+    color:
+        #090909;
+
+}
+
+
+.seminar-more span {
+
+    color:
+        rgba(
+            0,
+            0,
+            0,
+            0.6
+        );
+
+}
+
+
+.seminar-philosophy {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    margin-top:
+        70px;
+
+    min-height:
+        430px;
+
+    padding:
+        65px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid
+        rgba(
+            216,
+            155,
+            43,
+            0.3
+        );
+
+    background:
+        linear-gradient(
+            120deg,
+            #111,
+            #0b0b0b
+        );
+
+}
+
+
+.seminar-philosophy-number {
+
+    position:
+        absolute;
+
+    right:
+        -20px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    font-family:
+        "Anton",
+        sans-serif;
+
+    font-size:
+        26rem;
+
+    color:
+        rgba(
+            216,
+            155,
+            43,
+            0.035
+        );
+
+}
+
+
+.seminar-philosophy > div {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    max-width:
+        800px;
+
+}
+
+
+.seminar-philosophy h3 {
+
+    margin:
+        10px
+        0
+        22px;
+
+    font-family:
+        "Anton",
+        sans-serif;
+
+    font-size:
+        clamp(
+            3.8rem,
+            7vw,
+            7rem
+        );
+
+    line-height:
+        0.88;
+
+    font-weight:
+        400;
+
+}
+
+
+.seminar-philosophy h3 span {
+
+    display:
+        block;
+
+    color:
+        var(--gold);
+
+}
+
+
+.seminar-philosophy p {
+
+    max-width:
+        670px;
+
+    margin: 0;
+
+    color:
+        #aaa;
+
+    line-height:
+        1.8;
 
 }
 
@@ -2422,1249 +2846,6 @@ behold-widget {
 
 
 /* =========================================================
-   SLAM SESH HERO
-========================================================= */
-
-.slam-hero {
-
-    position:
-        relative;
-
-    min-height:
-        900px;
-
-    display:
-        flex;
-
-    align-items:
-        flex-end;
-
-    overflow:
-        hidden;
-
-    background:
-        #070707;
-
-}
-
-
-.slam-hero-image {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    background:
-
-        url(
-            "assets/slam-sesh-hero.jpg"
-        );
-
-    background-size:
-        cover;
-
-    background-position:
-        center;
-
-    filter:
-        grayscale(1);
-
-}
-
-
-.slam-hero-overlay {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(
-                0,
-                0,
-                0,
-                0.98
-            )
-            0%,
-
-            rgba(
-                0,
-                0,
-                0,
-                0.7
-            )
-            50%,
-
-            rgba(
-                0,
-                0,
-                0,
-                0.3
-            )
-            100%
-        );
-
-}
-
-
-.slam-red-wash {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    opacity:
-        0.18;
-
-    background:
-        linear-gradient(
-            135deg,
-            transparent
-            35%,
-            var(--red)
-            160%
-        );
-
-}
-
-
-.slam-hero-inner {
-
-    position:
-        relative;
-
-    z-index:
-        3;
-
-    padding-bottom:
-        80px;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        1fr
-        390px;
-
-    gap:
-        80px;
-
-    align-items:
-        end;
-
-}
-
-
-.slam-hero-copy h1 {
-
-    margin:
-        0;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        clamp(
-            8rem,
-            15vw,
-            15rem
-        );
-
-    line-height:
-        0.73;
-
-    font-weight:
-        400;
-
-    letter-spacing:
-        -0.045em;
-
-}
-
-
-.slam-hero-copy h1 span {
-
-    display:
-        block;
-
-    color:
-        var(--red);
-
-}
-
-
-.slam-subtitle {
-
-    margin:
-        35px
-        0
-        0;
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        clamp(
-            1.3rem,
-            2.2vw,
-            2.2rem
-        );
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.08em;
-
-}
-
-
-.slam-intro {
-
-    max-width:
-        520px;
-
-    margin-top:
-        18px;
-
-    color:
-        #aaa;
-
-    line-height:
-        1.7;
-
-}
-
-
-.slam-hero-bmf {
-
-    padding:
-        30px;
-
-    border:
-        1px solid
-        rgba(
-            255,
-            255,
-            255,
-            0.14
-        );
-
-    background:
-        rgba(
-            0,
-            0,
-            0,
-            0.5
-        );
-
-    backdrop-filter:
-        blur(
-            8px
-        );
-
-}
-
-
-.slam-hero-bmf span {
-
-    display:
-        block;
-
-    margin-bottom:
-        22px;
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        0.65rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.2em;
-
-    color:
-        #777;
-
-}
-
-
-.slam-statement {
-
-    padding:
-        25px
-        0;
-
-    border-top:
-        1px solid
-        rgba(
-            223,
-            30,
-            39,
-            0.3
-        );
-
-    border-bottom:
-        1px solid
-        rgba(
-            223,
-            30,
-            39,
-            0.3
-        );
-
-    background:
-        var(--red);
-
-}
-
-
-.slam-statement .container {
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    gap:
-        35px;
-
-    flex-wrap:
-        wrap;
-
-    color:
-        #fff;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        1.25rem;
-
-    letter-spacing:
-        0.04em;
-
-}
-
-
-
-/* =========================================================
-   UPCOMING EVENT
-========================================================= */
-
-.upcoming-section {
-
-    background:
-        #0c0c0c;
-
-}
-
-
-.upcoming-event {
-
-    margin-top:
-        65px;
-
-}
-
-
-.event-loading {
-
-    padding:
-        70px;
-
-    border:
-        1px solid
-        var(--line);
-
-    text-align:
-        center;
-
-    color:
-        #666;
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        0.8rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.2em;
-
-}
-
-
-.featured-event {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        minmax(
-            340px,
-            0.75fr
-        )
-        1.25fr;
-
-    border:
-        1px solid
-        var(--line);
-
-    background:
-        #111;
-
-}
-
-
-.featured-event-poster {
-
-    min-height:
-        650px;
-
-    background:
-        #080808;
-
-    overflow:
-        hidden;
-
-}
-
-
-.featured-event-poster img {
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        cover;
-
-}
-
-
-.event-poster-fallback {
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    min-height:
-        650px;
-
-    padding:
-        45px;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        space-between;
-
-    background:
-
-        linear-gradient(
-            145deg,
-            transparent,
-            rgba(
-                223,
-                30,
-                39,
-                0.2
-            )
-        ),
-
-        #090909;
-
-}
-
-
-.event-poster-fallback span {
-
-    color:
-        var(--red);
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.16em;
-
-}
-
-
-.event-poster-fallback strong {
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        7rem;
-
-    line-height:
-        0.8;
-
-    font-weight:
-        400;
-
-}
-
-
-.featured-event-info {
-
-    padding:
-        clamp(
-            45px,
-            6vw,
-            90px
-        );
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        center;
-
-}
-
-
-.featured-event-label {
-
-    color:
-        var(--red);
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        0.72rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.2em;
-
-}
-
-
-.featured-event-info h3 {
-
-    margin:
-        16px
-        0
-        25px;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        clamp(
-            4rem,
-            7vw,
-            7rem
-        );
-
-    line-height:
-        0.9;
-
-    font-weight:
-        400;
-
-}
-
-
-.event-date {
-
-    color:
-        #fff;
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        1.3rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.05em;
-
-}
-
-
-.event-details {
-
-    margin:
-        35px
-        0;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
-
-    border-top:
-        1px solid
-        var(--line);
-
-    border-bottom:
-        1px solid
-        var(--line);
-
-}
-
-
-.event-details > div {
-
-    padding:
-        22px
-        20px
-        22px
-        0;
-
-}
-
-
-.event-details span {
-
-    display:
-        block;
-
-    margin-bottom:
-        8px;
-
-    color:
-        #666;
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        0.63rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.16em;
-
-}
-
-
-.event-details strong {
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        1.05rem;
-
-}
-
-
-.event-location,
-.event-description {
-
-    max-width:
-        650px;
-
-    color:
-        #999;
-
-    line-height:
-        1.7;
-
-}
-
-
-.event-buttons {
-
-    display:
-        flex;
-
-    flex-wrap:
-        wrap;
-
-    gap:
-        12px;
-
-    margin-top:
-        25px;
-
-}
-
-
-
-/* =========================================================
-   NO UPCOMING EVENT
-========================================================= */
-
-.no-event {
-
-    position:
-        relative;
-
-    min-height:
-        520px;
-
-    padding:
-        clamp(
-            40px,
-            7vw,
-            95px
-        );
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    overflow:
-        hidden;
-
-    border:
-        1px solid
-        var(--line);
-
-    background:
-
-        linear-gradient(
-            120deg,
-            #111,
-            #0b0b0b
-        );
-
-}
-
-
-.no-event-number {
-
-    position:
-        absolute;
-
-    right:
-        -40px;
-
-    top:
-        50%;
-
-    transform:
-        translateY(
-            -50%
-        );
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        31rem;
-
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.025
-        );
-
-}
-
-
-.no-event-copy {
-
-    position:
-        relative;
-
-    z-index:
-        2;
-
-    max-width:
-        720px;
-
-}
-
-
-.no-event h3 {
-
-    margin:
-        18px
-        0
-        25px;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        clamp(
-            4.2rem,
-            8vw,
-            8rem
-        );
-
-    line-height:
-        0.86;
-
-    font-weight:
-        400;
-
-}
-
-
-.no-event h3 span {
-
-    color:
-        var(--red);
-
-}
-
-
-.no-event p {
-
-    max-width:
-        570px;
-
-    margin-bottom:
-        35px;
-
-    color:
-        #999;
-
-    line-height:
-        1.8;
-
-}
-
-
-
-/* =========================================================
-   SLAM ABOUT
-========================================================= */
-
-.slam-about-section {
-
-    background:
-        #111;
-
-}
-
-
-.slam-about-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        1fr
-        0.8fr;
-
-    gap:
-        100px;
-
-}
-
-
-.slam-about-copy {
-
-    padding-top:
-        40px;
-
-}
-
-
-.slam-about-copy p {
-
-    color:
-        #aaa;
-
-    font-size:
-        1rem;
-
-    line-height:
-        1.9;
-
-}
-
-
-
-/* =========================================================
-   EXPERIENCE
-========================================================= */
-
-.slam-experience {
-
-    background:
-        #080808;
-
-}
-
-
-.experience-grid {
-
-    margin-top:
-        60px;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
-
-    border-top:
-        1px solid
-        var(--line);
-
-    border-left:
-        1px solid
-        var(--line);
-
-}
-
-
-.experience-grid article {
-
-    min-height:
-        390px;
-
-    padding:
-        40px;
-
-    border-right:
-        1px solid
-        var(--line);
-
-    border-bottom:
-        1px solid
-        var(--line);
-
-}
-
-
-.experience-grid article > span {
-
-    color:
-        var(--red);
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        0.72rem;
-
-    font-weight:
-        800;
-
-}
-
-
-.experience-grid h3 {
-
-    margin:
-        120px
-        0
-        20px;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        3.2rem;
-
-    font-weight:
-        400;
-
-}
-
-
-.experience-grid p {
-
-    color:
-        #888;
-
-    line-height:
-        1.7;
-
-}
-
-
-
-/* =========================================================
-   BMF FEATURE PAGE
-========================================================= */
-
-.bmf-feature {
-
-    background:
-        #101010;
-
-}
-
-
-.bmf-feature-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        0.9fr
-        1.1fr;
-
-    gap:
-        100px;
-
-    align-items:
-        center;
-
-}
-
-
-.bmf-feature-logo {
-
-    min-height:
-        580px;
-
-    padding:
-        60px;
-
-    display:
-        grid;
-
-    place-items:
-        center;
-
-    border:
-        1px solid
-        rgba(
-            223,
-            30,
-            39,
-            0.26
-        );
-
-    background:
-        #070707;
-
-}
-
-
-.bmf-feature-copy > p:not(.show-kicker) {
-
-    color:
-        #aaa;
-
-    line-height:
-        1.8;
-
-}
-
-
-
-/* =========================================================
-   TICKET CTA
-========================================================= */
-
-.slam-ticket-cta {
-
-    position:
-        relative;
-
-    overflow:
-        hidden;
-
-    padding:
-        130px
-        0;
-
-    background:
-        var(--red);
-
-    color:
-        #fff;
-
-}
-
-
-.slam-ticket-lines {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    opacity:
-        0.12;
-
-    background-image:
-
-        linear-gradient(
-            135deg,
-            rgba(
-                0,
-                0,
-                0,
-                0.35
-            )
-            25%,
-            transparent
-            25%,
-            transparent
-            50%,
-            rgba(
-                0,
-                0,
-                0,
-                0.35
-            )
-            50%,
-            rgba(
-                0,
-                0,
-                0,
-                0.35
-            )
-            75%,
-            transparent
-            75%
-        );
-
-    background-size:
-        70px
-        70px;
-
-}
-
-
-.slam-ticket-cta .container {
-
-    position:
-        relative;
-
-    z-index:
-        2;
-
-}
-
-
-.slam-ticket-cta > .container > p:first-child {
-
-    font-family:
-        "Barlow Condensed",
-        sans-serif;
-
-    font-size:
-        0.78rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.18em;
-
-}
-
-
-.slam-ticket-cta h2 {
-
-    margin:
-        15px
-        0
-        25px;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        clamp(
-            6rem,
-            12vw,
-            12rem
-        );
-
-    line-height:
-        0.8;
-
-    font-weight:
-        400;
-
-}
-
-
-.slam-ticket-cta h2 span {
-
-    color:
-        #090909;
-
-}
-
-
-.ticket-copy {
-
-    max-width:
-        560px;
-
-    line-height:
-        1.7;
-
-}
-
-
-
-/* =========================================================
    FOOTER
 ========================================================= */
 
@@ -3791,6 +2972,28 @@ behold-widget {
 
 
 /* =========================================================
+   RESPONSIVE 1200
+========================================================= */
+
+@media (
+    max-width: 1200px
+) {
+
+    .coach-grid {
+
+        grid-template-columns:
+            repeat(
+                3,
+                1fr
+            );
+
+    }
+
+}
+
+
+
+/* =========================================================
    RESPONSIVE 1100
 ========================================================= */
 
@@ -3828,21 +3031,8 @@ behold-widget {
     }
 
 
-    .coach-grid {
-
-        grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
-
-    }
-
-
     .intro-grid,
-    .bmf-home-grid,
-    .slam-about-grid,
-    .bmf-feature-grid {
+    .bmf-home-grid {
 
         gap:
             60px;
@@ -3861,14 +3051,24 @@ behold-widget {
     }
 
 
-    .slam-hero-inner {
+    .seminars-heading {
 
         grid-template-columns:
-            1fr
-            300px;
+            1fr;
 
         gap:
             40px;
+
+    }
+
+
+    .seminar-names {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
 
     }
 
@@ -3981,9 +3181,7 @@ behold-widget {
 
     .intro-grid,
     .expectations-grid,
-    .slam-about-grid,
-    .bmf-home-grid,
-    .bmf-feature-grid {
+    .bmf-home-grid {
 
         grid-template-columns:
             1fr;
@@ -3991,8 +3189,7 @@ behold-widget {
     }
 
 
-    .intro-copy,
-    .slam-about-copy {
+    .intro-copy {
 
         padding-top:
             0;
@@ -4037,77 +3234,13 @@ behold-widget {
     }
 
 
-    .featured-event {
+    .coach-grid {
 
         grid-template-columns:
-            1fr;
-
-    }
-
-
-    .featured-event-poster {
-
-        min-height:
-            auto;
-
-        aspect-ratio:
-            4 / 5;
-
-    }
-
-
-    .event-poster-fallback {
-
-        min-height:
-            550px;
-
-    }
-
-
-    .experience-grid {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-
-    .experience-grid article {
-
-        min-height:
-            auto;
-
-    }
-
-
-    .experience-grid h3 {
-
-        margin-top:
-            70px;
-
-    }
-
-
-    .slam-hero {
-
-        min-height:
-            820px;
-
-    }
-
-
-    .slam-hero-inner {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-
-    .slam-hero-bmf {
-
-        display:
-            none;
+            repeat(
+                2,
+                1fr
+            );
 
     }
 
@@ -4204,8 +3337,7 @@ behold-widget {
 
 
     .hero-actions .btn,
-    .bmf-actions .btn,
-    .event-buttons .btn {
+    .bmf-actions .btn {
 
         width:
             100%;
@@ -4288,6 +3420,50 @@ behold-widget {
     }
 
 
+    .seminar-names {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .seminar-name {
+
+        min-height:
+            145px;
+
+    }
+
+
+    .seminar-philosophy {
+
+        min-height:
+            auto;
+
+        padding:
+            40px
+            26px;
+
+    }
+
+
+    .seminar-philosophy h3 {
+
+        font-size:
+            4rem;
+
+    }
+
+
+    .seminar-philosophy-number {
+
+        font-size:
+            17rem;
+
+    }
+
+
     .bmf-brand-panel {
 
         min-height:
@@ -4360,142 +3536,6 @@ behold-widget {
     }
 
 
-    .slam-hero {
-
-        min-height:
-            730px;
-
-    }
-
-
-    .slam-hero-copy h1 {
-
-        font-size:
-            7rem;
-
-    }
-
-
-    .slam-subtitle {
-
-        font-size:
-            1.3rem;
-
-    }
-
-
-    .slam-statement .container {
-
-        justify-content:
-            flex-start;
-
-        gap:
-            12px;
-
-        font-size:
-            0.9rem;
-
-    }
-
-
-    .featured-event-info {
-
-        padding:
-            35px
-            24px;
-
-    }
-
-
-    .featured-event-info h3 {
-
-        font-size:
-            4rem;
-
-    }
-
-
-    .event-details {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-
-    .event-details > div {
-
-        border-bottom:
-            1px solid
-            var(--line);
-
-    }
-
-
-    .event-details > div:last-child {
-
-        border-bottom:
-            0;
-
-    }
-
-
-    .no-event {
-
-        min-height:
-            480px;
-
-        padding:
-            32px
-            24px;
-
-    }
-
-
-    .no-event-number {
-
-        font-size:
-            18rem;
-
-    }
-
-
-    .no-event h3 {
-
-        font-size:
-            4.3rem;
-
-    }
-
-
-    .bmf-feature-logo {
-
-        min-height:
-            auto;
-
-        padding:
-            35px;
-
-    }
-
-
-    .slam-ticket-cta {
-
-        padding:
-            90px
-            0;
-
-    }
-
-
-    .slam-ticket-cta h2 {
-
-        font-size:
-            6rem;
-
-    }
-
-
     .footer-inner nav {
 
         flex-direction:
@@ -4553,18 +3593,10 @@ behold-widget {
     }
 
 
-    .slam-hero-copy h1 {
+    .seminar-philosophy h3 {
 
         font-size:
-            6rem;
-
-    }
-
-
-    .no-event h3 {
-
-        font-size:
-            3.8rem;
+            3.4rem;
 
     }
 
@@ -4592,6 +3624,19 @@ behold-widget {
 
         transform:
             none;
+
+    }
+
+
+    .seminar-name:hover {
+
+        background:
+            rgba(
+                255,
+                255,
+                255,
+                0.015
+            );
 
     }
 
